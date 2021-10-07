@@ -57,3 +57,6 @@ section img{
     margin-right: 45px; 
     width: 45vw;
 }
+table, th, td {
+    border:2px solid grey;
+  }
