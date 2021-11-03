@@ -11,22 +11,21 @@ main{
 /*---------------------------------
 -------------Navbar----------------
 ---------------------------------*/
-header{
+nav{
     background-color: #00C2FF;
 }
 #logo{
     width: 60px;
 }
-#navGrid{
+nav{
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
-    margin-right: 25%;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 3fr;
 }
 #logoDiv{
     margin-left: 10px;
     margin-top: 10px;
 }
-#navGrid a{
+nav a{
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 7px;
@@ -36,12 +35,13 @@ header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
     margin: auto;
 }
-#navGrid a:hover{
+nav a:hover{
     background-color: #4CD4FF;
 }
-#navGrid a:first-child{
-    padding-bottom: 0px;
-    padding-top: 60px;
+nav a:first-child{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
 }
 /*---------------------------------
 --------------Headers--------------
@@ -92,6 +92,14 @@ h4{
     border-radius: 0px;
     margin: auto;
     margin-top: 20px;
+}
+/*---------------------------------
+----------Calendar page------------
+---------------------------------*/
+#stadium{
+    display: block;
+    float: right;
+    width: 400px;
 }
 /*---------------------------------
 -----------Results page-----------
