@@ -160,6 +160,24 @@ h4{
 .sted{
     grid-area: l;
 }
+@media only screen and (max-width: 600px) {
+    .datoen{
+        padding-top: 0;
+        margin-top: 0;
+        grid-area: d;
+        font-size: 30px;
+    }
+    .time{
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 30px;
+        grid-area: t;
+    }
+    .sted{
+        grid-area: l;
+        font-size: 30px;
+    }
+  }
 /*---------------------------------
 ------------News grid--------------
 ---------------------------------*/
