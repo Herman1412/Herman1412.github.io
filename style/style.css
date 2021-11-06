@@ -113,34 +113,52 @@ h4{
 /*---------------------------------
 -----------Results page-----------
 ---------------------------------*/
-.result{
-    width: 100%;
-    height: 130px;
-    background-color: #D0D0D0;
+.container {
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: auto;
 }
-.result:nth-child(odd){
+
+.result{
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    background-color: #D0D0D0;
+    grid-template-columns:repeat(12,1fr);
+    grid-template-areas: 
+        "d d d d d d . . . . . t"
+        "h h h h s s s s a a a a"
+        "l l l l l l l l l l l l"
+}
+.result:nth-child(even){
     background-color: white;
 }
-.result h4, h1{
-    display: block;
+
+.datoen{
+    grid-area: d;
 }
-.result h4{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-}
+
 .time{
-    float: right;
-    margin-top: -20px !important;
-    margin-right: 5px !important;
+    grid-area: t;
+}
+
+.team1{
+    grid-area: h;
+    text-align: right;
+}
+
+.res{
+    grid-area: s;
+    text-align: center;
 }
 .team2{
-    float: right;
-    margin-top: -60px;
-    margin-right: 150px;
+    grid-area: a;
 }
-.team1{
-    margin-left: 150px;
+
+.sted{
+    grid-area: l;
 }
 /*---------------------------------
 ------------News grid--------------
