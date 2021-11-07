@@ -103,6 +103,27 @@ h4{
     margin-top: 20px;
 }
 /*---------------------------------
+------------About page-------------
+---------------------------------*/
+#membershipImg{
+    display: block;
+    float: right;
+    width: 450px;
+}
+#formGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+#formGrid div{
+    background-color: #4CD4FF;
+    width: 100%;
+    min-height: 300px;
+}
+#formGrid div h3{
+    text-align: center;
+}
+/*---------------------------------
 ----------Calendar page------------
 ---------------------------------*/
 #stadium{
