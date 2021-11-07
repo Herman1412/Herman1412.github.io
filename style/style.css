@@ -63,6 +63,8 @@ footer{
     min-height: 30px;
     text-align: center;
     padding-top: 10px;
+    position: fixed;
+    bottom: 0px;
 }
 footer h4{
     margin-top: 5px;
