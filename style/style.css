@@ -182,6 +182,15 @@ h4{
     grid-area: l;
 }
 @media only screen and (max-width: 600px) {
+    .team1{
+        text-align: center;
+        grid-area: h;
+    }
+    .team2{
+        text-align: center;
+        grid-area: a;
+    }
+    
     .datoen{
         padding-top: 0;
         margin-top: 0;
@@ -197,6 +206,15 @@ h4{
     .sted{
         grid-area: l;
         font-size: 30px;
+    }
+    .result{
+            grid-template-areas: 
+            "d d d d d d d d d d d d"
+            "t t t t t t t t t t t t"
+            "h h h h h h h h h h h h"
+            "s s s s s s s s s s s s"
+            "a a a a a a a a a a a a"
+            "l l l l l l l l l l l l";
     }
   }
 /*---------------------------------
