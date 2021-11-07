@@ -8,6 +8,7 @@ main{
     width: 1200px;
     margin: auto;
     margin-top: 124px;
+    margin-bottom: 30px;
 }
 /*---------------------------------
 -------------Navbar----------------
@@ -51,6 +52,39 @@ nav a:not(:first-child){
 }
 nav a #logo{
     margin: auto;
+}
+/*---------------------------------
+-------------Footer----------------
+---------------------------------*/
+footer{
+    background-color: #00C2FF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+footer h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.sponsor{
+    width: 19%;
+}
+#mediaGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+#mediaGrid a:nth-child(odd){
+    text-align: right;
+}
+#mediaGrid a:nth-child(even){
+    text-align: left;
+}
+#mediaGrid img{
+    width: 12%;  
 }
 /*---------------------------------
 --------------Headers--------------
