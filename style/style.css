@@ -151,7 +151,7 @@ h4{
     grid-template-areas: 
         "d d d d d d . . . . . t"
         "h h h h s s s s a a a a"
-        "l l l l l l l l l l l l"
+        "l l l l l l l l l l l l";
 }
 .result:nth-child(even){
     background-color: white;
