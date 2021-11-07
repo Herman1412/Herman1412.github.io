@@ -103,7 +103,7 @@ h4{
     margin-top: 20px;
 }
 /*---------------------------------
-------------About page-------------
+------------Membership-------------
 ---------------------------------*/
 #membershipImg{
     display: block;
@@ -116,12 +116,28 @@ h4{
     column-gap: 25px;
 }
 #formGrid div{
-    background-color: #4CD4FF;
+    background-color: #67C8FF;
     width: 100%;
     min-height: 300px;
 }
+#formGrid div p, hr{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 #formGrid div h3{
     text-align: center;
+}
+form{
+   display: grid;
+   grid-template-columns: 1fr;
+   row-gap: 17px;
+   text-align: right;
+   margin-right: 30%;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+#birthdate{
+    min-width: 172px;
 }
 /*---------------------------------
 ----------Calendar page------------
