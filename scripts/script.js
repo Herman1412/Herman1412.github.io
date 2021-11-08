@@ -36,28 +36,39 @@ for (let i = 0; i < footerItems.length; i++){
     footerL.innerHTML = footerItems[i].text;
     footer.appendChild(footerL)
 }
+
 //    --Rulette--
+
+//_Prize button_
 let prizeBtn = document.createElement('button');
 prizeBtn.setAttribute('id', 'prizeBtn');
 prizeBtn.innerHTML = '<img src="images/wheelicon.png" alt="">'
 
+//_Prize window_
 let prizeWindow = document.createElement('div');
 prizeWindow.setAttribute('class', 'window');
+
+//_Prize header_
 let prizeHeader = document.createElement('h1');
 prizeHeader.innerHTML = "Lykkehjulet"
 prizeWindow.appendChild(prizeHeader);
+
+//_Prize content_
 let prizeWindowContent = document.createElement('div');
 prizeWindowContent.setAttribute('class', 'prizeWindowContent');
 prizeWindow.appendChild(prizeWindowContent)
 
+//_Closing button_
 let closeBtn = document.createElement('button');
 closeBtn.setAttribute('id', 'closeBtn');
 prizeWindowContent.appendChild(closeBtn)
 
+//_Loading div_
 let loading = document.createElement('div');
 loading.setAttribute('id', 'loading');
 prizeWindowContent.appendChild(loading)
 
+//_Result div_
 let prizeResult = document.createElement('div');
 prizeResult.setAttribute('id', 'prizeResult');
 prizeWindowContent.appendChild(prizeResult)
