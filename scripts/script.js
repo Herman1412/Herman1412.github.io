@@ -126,3 +126,42 @@ window.onload = function (){
     document.body.appendChild(prizeWindow);
     document.body.appendChild(prizeBtn);
 }
+//morkmodus sript
+//lager knapp
+let knapp = document.createElement("button");
+knapp.innerHTML = "Change light mode";
+knapp.className = "morkmodus"
+knapp.id = "morkmodus"
+
+var main = document.getElementsByTagName("main")[0];
+main.insertAdjacentElement("afterbegin", knapp);
+
+let darkMode = localStorage.getItem("darkMode");
+const darkModeToggle = document.getElementById("morkmodus");
+console.log(darkMode)
+
+if (darkMode == "paa") {
+    enableDarkMode();
+}
+
+
+function enableDarkMode(){
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkMode', 'paa');
+  }
+
+function disableDarkMode() {
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkMode', "av");
+}
+
+darkModeToggle.addEventListener("click", () => {
+    darkMode = localStorage.getItem("darkMode")
+    if(darkMode !== "paa"){
+        enableDarkMode();
+    }
+    else {
+        disableDarkMode();
+    }
+});
+//morkmodus script ferdig

@@ -3,6 +3,7 @@
 ---------------------------------*/
 body{
     margin: 0px;
+    background-color: var(--bakgrunn); 
 }
 main{
     max-width: 1200px;
@@ -14,7 +15,7 @@ main{
 -------------Navbar----------------
 ---------------------------------*/
 nav{
-    background-color: #00C2FF;
+    background-color: var(--navbar);
 }
 #logo{
     width: 60px;
@@ -57,7 +58,7 @@ nav a #logo{
 -------------Footer----------------
 ---------------------------------*/
 footer{
-    background-color: #00C2FF;
+    background-color: var(--navbar);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 30px;
@@ -109,7 +110,7 @@ footer h4{
     left: 30%;
     width: 40%;
     min-height: 40%;
-    background-color: #67C8FF;
+    background-color: var(--navbar);
     z-index: 1;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
@@ -117,7 +118,7 @@ footer h4{
     text-align: center;
 }
 .prizeWindowContent{
-    background-color: #FFFFFF;
+    background-color: var(--bakgrunn);
     padding: 5%;
     width: 90%;
     height: 200%;
@@ -157,18 +158,22 @@ footer h4{
 h1{
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
    font-size: 34px;
+   color: var(--skrift);
 }
 h2{
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
    font-size: 28px;
+   color: var(--skrift);
 }
 h3{
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
    font-size: 22px;
+   color: var(--skrift); 
 }
 h4{
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
    font-size: 18px;
+   color: var(--skrift); 
 }
 /*---------------------------------
 --------------Paragraphs-----------
@@ -176,10 +181,12 @@ h4{
 .p1{
     font-family: 'Lora', 'Times New Roman', Times, serif;
     font-size: 24px;
+    color: var(--skrift);
 }
 .p2{
     font-family: 'Lora', 'Times New Roman', Times, serif;
     font-size: 16px;
+    color: var(--skrift);
 }
 /*---------------------------------
 ------------About page-------------
@@ -193,9 +200,9 @@ h4{
     text-align: center;
 }
 .knapper{
-    background-color: #2E98FF;
+    background-color:var(--navbar);
     border: none;
-    box-shadow: 0px 0px 10px 10px rgba(46,152,255,1);
+    box-shadow: 0px 0px 10px 10px var(--navbar);
     font-size: 28px;
     border-radius: 0px;
     margin: auto;
@@ -215,7 +222,7 @@ h4{
     column-gap: 25px;
 }
 #formGrid div{
-    background-color: #67C8FF;
+    background-color: var(--navbar);
     width: 100%;
     min-height: 300px;
 }
@@ -264,8 +271,9 @@ form .knapper{
 .result{
     display: grid;
     margin: 10px;
+    color:var(--skrift);
     padding: 10px;
-    background-color: #D0D0D0;
+    background-color: var(--kalRes);
     grid-template-columns:repeat(12,1fr);
     grid-template-areas: 
         "d d d d d d . . . . . t"
@@ -273,7 +281,7 @@ form .knapper{
         "l l l l l l l l l l l l";
 }
 .result:nth-child(even){
-    background-color: white;
+    background-color: var(--kalRes2);
 }
 
 .datoen{
@@ -347,7 +355,7 @@ form .knapper{
     column-gap: 20px;
 }
 #newsGrid div{
-    background-color: #67C8FF;
+    background-color: var(--navbar);
     width: 100%;
     min-height: 300px;
     box-shadow: 4px 5px 8px 2px rgba(0,0,0,0.55);
@@ -357,6 +365,7 @@ form .knapper{
 }
 #newsGrid div h4, p{
     margin: 7px;
+    color: var(--skrift);
 }
 #news1{
     grid-row: span 2;
@@ -366,4 +375,35 @@ form .knapper{
 }
 #news4 img{
     height: 50%;
+}
+
+/*---------------------------------
+-------------DarkMode----------------
+---------------------------------*/
+
+:root {
+    --bakgrunn:white;
+    --navbar:#00C2FF;
+    --skriftNav:white;
+    --skrift:black;
+    --kalRes:#D0D0D0;
+    --kalRes2:white;
+}
+
+.darkmode{
+    --bakgrunn:#121212;
+    --navbar:#004d66; 
+    --skriftNav:lightgrey;
+    --skrift:lightgrey;
+    --kalRes:#004d66;
+    --kalRes2:#121212;
+}
+.morkmodus{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    background-color:var(--navbar);
+    color: var(--skrift);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
+    border-color: var(--navbar);
 }
