@@ -367,3 +367,34 @@ form .knapper{
 #news4 img{
     height: 50%;
 }
+
+/*---------------------------------
+-------------DarkMode----------------
+---------------------------------*/
+
+:root {
+    --bakgrunn:white;
+    --navbar:#00C2FF;
+    --skriftNav:white;
+    --skrift:black;
+    --kalRes:#D0D0D0;
+    --kalRes2:white;
+}
+
+.darkmode{
+    --bakgrunn:#121212;
+    --navbar:#004d66; 
+    --skriftNav:lightgrey;
+    --skrift:lightgrey;
+    --kalRes:#004d66;
+    --kalRes2:#121212;
+}
+.morkmodus{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    background-color:var(--navbar);
+    color: var(--skrift);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
+    border-color: var(--navbar);
+}
