@@ -119,6 +119,7 @@ prizeBtn.onclick = function getPrize(){
         fetchPrize()
     }
 }
+
 window.onload = function (){
     document.body.appendChild(nav);
     document.body.appendChild(footer);
