@@ -126,6 +126,7 @@ window.onload = function (){
     document.body.appendChild(prizeWindow);
     document.body.appendChild(prizeBtn);
 }
+
 //morkmodus sript
 //lager knapp
 let knapp = document.createElement("button");
