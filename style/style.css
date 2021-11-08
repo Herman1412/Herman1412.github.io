@@ -89,6 +89,69 @@ footer h4{
     width: 12%;  
 }
 /*---------------------------------
+------------Prize window-----------
+---------------------------------*/
+#prizeBtn{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+}
+#prizeBtn img{
+    width: 50%;
+    float: right;
+}
+.window{
+    display: none;
+    position: fixed;
+    top: 7%;
+    left: 30%;
+    width: 40%;
+    min-height: 40%;
+    background-color: #67C8FF;
+    z-index: 1;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.window h1{
+    text-align: center;
+}
+.prizeWindowContent{
+    background-color: #FFFFFF;
+    padding: 5%;
+    width: 90%;
+    height: 200%;
+    margin: auto;
+    margin-bottom: 6%;
+}
+#closeBtn{
+    float: right;
+    background: none;
+    border: none;
+}
+#closeBtn img{
+    width: 10%;
+    float: right;
+}
+#loading{
+    text-align: center;
+}
+#loading img{
+    width: 50%;
+    display: block;
+    margin-left: 25%;
+}
+#prizeResult{
+    text-align: center;
+}
+#prizeResult{
+    text-align: center;
+    display: block; 
+}
+#prizeResult img{
+    width: 40%;
+}
+/*---------------------------------
 --------------Headers--------------
 ---------------------------------*/
 h1{

@@ -18,7 +18,7 @@ for (let i = 0; i < navLinks.length; i++) {
     nav.appendChild(navA);
 }
 
-
+//     --Footer--
 const footerItems = [
     {text: '<img class="sponsor" src="images/adidas.png" alt="">'},
     {text: '<img class="sponsor" src="images/powerade.png" alt="">'},
@@ -27,15 +27,90 @@ const footerItems = [
     {text: '<h4>Kontakt info</h4> <p>example@webtek.no <br> Tlf: 123 45 678</p>'},
     {text: '<h4>Sosiale medier</h4> <div id="mediaGrid"><a href="https://www.youtube.com/user/ntnuinfo"><img src="images/youtube.png" alt=""></a><a href="https://twitter.com/ntnu"><img src="images/twitter.png" alt=""></a><a href="https://www.facebook.com/NTNUirl"><img src="images/facebook.png" alt=""></a><a href="https://www.instagram.com/ntnu/?hl=nb"><img src="images/instagram.png" alt=""></a></div>'},
 ];
-//     --Footer--
+
 let footer = document.createElement("footer"),
 footerL;
+
 for (let i = 0; i < footerItems.length; i++){
     footerL = document.createElement("a");
     footerL.innerHTML = footerItems[i].text;
     footer.appendChild(footerL)
 }
+//    --Rulette--
+let prizeBtn = document.createElement('button');
+prizeBtn.setAttribute('id', 'prizeBtn');
+prizeBtn.innerHTML = '<img src="images/wheelicon.png" alt="">'
+
+let prizeWindow = document.createElement('div');
+prizeWindow.setAttribute('class', 'window');
+let prizeHeader = document.createElement('h1');
+prizeHeader.innerHTML = "Lykkehjulet"
+prizeWindow.appendChild(prizeHeader);
+let prizeWindowContent = document.createElement('div');
+prizeWindowContent.setAttribute('class', 'prizeWindowContent');
+prizeWindow.appendChild(prizeWindowContent)
+
+let closeBtn = document.createElement('button');
+closeBtn.setAttribute('id', 'closeBtn');
+prizeWindowContent.appendChild(closeBtn)
+
+let loading = document.createElement('div');
+loading.setAttribute('id', 'loading');
+prizeWindowContent.appendChild(loading)
+
+let prizeResult = document.createElement('div');
+prizeResult.setAttribute('id', 'prizeResult');
+prizeWindowContent.appendChild(prizeResult)
+closeBtn.innerHTML = '<img src="images/xIcon.png" alt="">'
+
+closeBtn.onclick = function closeWindow() {
+  prizeWindow.style.display = 'none';
+  prizeResult.innerHTML = ''
+}
+
+let timer;
+
+function fetchPrize(){
+    timer = 0;
+    function timeInc(){
+        timer++;
+    }
+    setInterval(timeInc, 1000);
+
+    prizeWindow.style.display = 'block';
+    loading.innerHTML = '<img src="images/wheel.gif" alt=""> <h2>Henter premie</h2>'
+    prizeResult.innerHTML = ''
+    setTimeout(function(){
+        loading.innerHTML = ''
+        let ticet = (Math.random() * 10)
+        let prize;
+        if (ticet <= 8.3){
+        prize = '<img src="images/loss.png" alt=""> <h2>Beklager ingen gevinst</h2>';
+        }
+        else if (ticet <= 9.3){
+            prize = '<img src="images/winner.png" alt=""> <h2>Du vandt en vannflaske!</h2>';
+        }  
+        else if (ticet <= 9.8){
+            prize = '<img src="images/winner.png" alt=""> <h2>Du vandt en fotball!</h2>';
+        } 
+        else{
+            prize = '<img src="images/winner.png" alt=""> <h2>Du vandt en t-sjorte!</h2>';
+        } 
+        prizeResult.innerHTML = prize
+    }, 5000);   
+}
+
+prizeBtn.onclick = function getPrize(){
+    if(timer < 300){
+        alert('Du må vente minst 5 minutter mellom hver gang du kan spinne')
+    }
+    else{
+        fetchPrize()
+    }
+}
 window.onload = function (){
     document.body.appendChild(nav);
     document.body.appendChild(footer);
+    document.body.appendChild(prizeWindow);
+    document.body.appendChild(prizeBtn);
 }
