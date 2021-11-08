@@ -178,7 +178,7 @@ h4{
 /*---------------------------------
 --------------Paragraphs-----------
 ---------------------------------*/
-.p1{
+.p1, li{
     font-family: 'Lora', 'Times New Roman', Times, serif;
     font-size: 24px;
     color: var(--skrift);
