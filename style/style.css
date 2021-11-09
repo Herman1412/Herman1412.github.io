@@ -260,7 +260,6 @@ form .knapper{
 -----------Results page-----------
 ---------------------------------*/
 .container {
-    min-width: 400px;
     padding: 10px;
     margin: 50px;
     display: flex;
@@ -269,8 +268,9 @@ form .knapper{
 }
 
 .result{
+    width: 1200px;
     display: grid;
-    margin: 10px;
+    margin: auto;
     color:var(--skrift);
     padding: 10px;
     background-color: var(--kalRes);
@@ -284,29 +284,35 @@ form .knapper{
     background-color: var(--kalRes2);
 }
 
-.datoen{
+.result h4:nth-child(1){
     grid-area: d;
+    margin-top: 0px;
 }
 
-.time{
+.result h4:nth-child(2){
     grid-area: t;
+    margin-top: 0px;
 }
 
-.team1{
-    grid-area: h;
-    text-align: right;
-}
-
-.res{
+.result h4:nth-child(3){
     grid-area: s;
     text-align: center;
+    font-size: 34px;
 }
-.team2{
-    grid-area: a;
+.result h4:nth-child(4){
+    grid-area: h;
+    text-align: right;
+    font-size: 34px;
 }
 
-.sted{
+.result h4:nth-child(5){
+    grid-area: a;
+    font-size: 34px;
+}
+
+.result h4:nth-child(6){
     grid-area: l;
+    margin-bottom: 0px;
 }
 @media only screen and (max-width: 600px) {
     .team1{
