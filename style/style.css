@@ -272,8 +272,6 @@ form .knapper{
     display: flex;
     flex-direction: column;
     grid-template-rows: auto;
-    position: absolute;
-    top: 0px;
 }
 
 .result{
