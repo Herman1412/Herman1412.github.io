@@ -130,7 +130,7 @@ window.onload = function (){
 //morkmodus sript
 //lager knapp
 let knapp = document.createElement("button");
-knapp.innerHTML = "Change light mode";
+knapp.innerHTML = '<img src="images/darkMode.png" alt="" srcset="">';
 knapp.className = "morkmodus"
 knapp.id = "morkmodus"
 
