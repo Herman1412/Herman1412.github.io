@@ -6,7 +6,7 @@ body{
     background-color: var(--bakgrunn); 
 }
 main{
-    max-width: 1200px;
+    width: 75%;;
     margin: auto;
     margin-top: 124px;
     margin-bottom: 30px;
@@ -300,6 +300,16 @@ form .knapper{
 #birthdate{
     min-width: 172px;
 }
+@media only screen and (max-width: 850px){
+    #membershipImg{
+        width: 100%;
+    }
+    #formGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+}
 /*---------------------------------
 ----------Calendar page------------
 ---------------------------------*/
@@ -316,6 +326,11 @@ form .knapper{
     grid-template-rows: auto; 
     width: 75%;
     margin: auto;
+}
+@media only screen and (max-width: 850px) {
+    #stadium{
+        width: 100%;
+    }
 }
 /*---------------------------------
 -----------Results page-----------
@@ -419,7 +434,8 @@ form .knapper{
 ---------------------------------*/
 #newsGrid{
     display: grid;
-    width: 1200px;
+    width: 100%;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
@@ -446,7 +462,31 @@ form .knapper{
 #news4 img{
     height: 50%;
 }
-
+@media only screen and (max-width: 850px){
+    #newsGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    #news1{
+        grid-row: span 1;
+    }
+    #news4{
+        grid-column: span 1;
+    }
+    #news4 img{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    #newsGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+}
 /*---------------------------------
 -------------DarkMode----------------
 ---------------------------------*/
