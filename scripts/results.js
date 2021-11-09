@@ -43,8 +43,8 @@ let results = [
     },
 ];
 
-let container = document.createElement('div');
-container.setAttribute('class', 'container');
+let containerR = document.createElement('div');
+containerR.setAttribute('class', 'containerR');
 
 for (let i = 0; i < results.length; i++){
     div = document.createElement('div');
@@ -54,6 +54,7 @@ for (let i = 0; i < results.length; i++){
         h4.innerHTML = results[i][key]
         div.appendChild(h4)
     }
-    container.appendChild(div);
+    containerR.appendChild(div);
 }
-document.body.appendChild(container);
+
+document.body.appendChild(containerR);

@@ -256,15 +256,24 @@ form .knapper{
     float: right;
     width: 400px;
 }
+.containerC{
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: auto; 
+}
 /*---------------------------------
 -----------Results page-----------
 ---------------------------------*/
-.container {
+.containerR {
     padding: 10px;
     margin: 50px;
     display: flex;
     flex-direction: column;
     grid-template-rows: auto;
+    position: absolute;
+    top: 0px;
 }
 
 .result{
