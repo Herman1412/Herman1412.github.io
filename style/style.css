@@ -189,12 +189,64 @@ h4{
     color: var(--skrift);
 }
 /*---------------------------------
+------------Index page-------------
+---------------------------------*/
+#divSlides img{
+    width: 100%;
+    margin-top: 116px;
+}
+#frontDiv{
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    left: 30%;
+    right: 30%;
+}
+#frontDiv h1{
+    font-size: 5vw;
+    margin-bottom: 0px;
+    color: #2E9BFF;
+    text-shadow: 0 2px 1px #00C2FF, 
+    -1px 3px 1px #67C8FF, 
+    -2px 5px 1px #4CD4FF;
+}
+#frontDiv button{
+    font-size: 2vw;
+}
+#indexMain{
+    margin-top: 0px;
+}
+#sponsorer{
+    background-color: #D0D0D0;
+    text-align: center;
+    float: right;
+    width: 37.5%;
+}
+#sponsorer img{
+    margin: auto;
+    width: 90%;
+}
+#sponsorGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+#infoFrontPage img{
+    width: 50%;
+}
+#infoFrontPage div button{
+    position: relative;
+    bottom: 100px;
+    left: 14%;
+}
+/*---------------------------------
 ------------About page-------------
 ---------------------------------*/
 #lagBilde{
     display: block;
     float: right;
     width: 300px;
+    margin-top: -400px;
 }
 #btnDiv{
     text-align: center;
@@ -412,8 +464,10 @@ form .knapper{
     --kalRes2:#121212;
 }
 .morkmodus{
-    position: relative;
-    float: right;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: 1;
     margin-right: 10px;
     background-color:var(--navbar);
     color: var(--skrift);
