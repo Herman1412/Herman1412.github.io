@@ -129,6 +129,7 @@ window.onload = function (){
 
 //morkmodus sript
 //lager knapp
+//source/credit https://www.youtube.com/watch?v=wodWDIdV9BY
 let knapp = document.createElement("button");
 knapp.innerHTML = '<img src="images/darkMode.png" alt="" srcset="">';
 knapp.className = "morkmodus"
