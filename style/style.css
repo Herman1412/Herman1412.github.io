@@ -41,14 +41,14 @@ nav a:hover{
 nav a:first-child{
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
     margin-left: 10px;
 }
 nav a:not(:first-child){
     width: 100%;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
     text-align: center;
 }
 nav a #logo{
@@ -251,9 +251,9 @@ h4{
 #frontDiv{
     text-align: center;
     position: absolute;
-    top: 180px;
-    left: 30%;
-    right: 30%;
+    top: 8vw;
+    left: 15vw;
+    right: 15vw;
 }
 #frontDiv h1{
     font-size: 5vw;
@@ -273,7 +273,7 @@ h4{
     background-color: #D0D0D0;
     text-align: center;
     float: right;
-    width: 37.5%;
+    width: 27vw;
 }
 #sponsorer img{
     margin: auto;
@@ -285,13 +285,53 @@ h4{
     row-gap: 20px;
 }
 #infoFrontPage img{
-    width: 50%;
+    width: 40vw;
 }
 #infoFrontPage div button{
     position: relative;
-    bottom: 100px;
+    bottom: 10vw;
     left: 14%;
 }
+@media only screen and (max-width: 1200px){
+    #sponsorer{
+        background-color: #D0D0D0;
+        text-align: center;
+        float: right;
+        width: 30vw;
+    }
+    #sponsorer img{
+        width: 30vw;
+    }
+    #sponsorGrid{
+        row-gap: 2vw;
+    }
+}
+@media only screen and (max-width: 900px){
+    #sponsorer{
+        background-color: #D0D0D0;
+        text-align: center;
+        width: 100%;
+    }
+    #sponsorGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #sponsorer img{
+        width: 20vw;
+    }
+    #sponsorer h2{
+        grid-column: span 3;
+    }
+    #infoFrontPage img{
+        width: 100%;
+    }
+    #infoFrontPage div button{
+        position: relative;
+        bottom: 10vw;
+        left: 25vw;
+    }
+}
+
 /*---------------------------------
 ------------About page-------------
 ---------------------------------*/
@@ -307,10 +347,17 @@ h4{
     background-color:var(--navbar);
     border: none;
     box-shadow: 0px 0px 10px 10px var(--navbar);
-    font-size: 28px;
+    font-size: 2.5vw;
     border-radius: 0px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 2vw;
+}
+#mail{
+    width: 100%;
+}
+#mailButton{
+    text-align: center;
+    margin-right: auto;
 }
 @media only screen and (max-width: 900px){
     #lagBilde{
@@ -329,6 +376,7 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 25px;
+    margin-top: 4.5vw;
 }
 #formGrid div{
     background-color: var(--navbar);
@@ -352,7 +400,7 @@ form{
    margin-bottom: 5%;
 }
 form .knapper{
-    margin-right: 9%;
+    margin-right: 0px;
 }
 #birthdate{
     min-width: 172px;
@@ -365,6 +413,9 @@ form .knapper{
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 25px;
+    }
+    form .knapper{
+        margin-right: 13%;
     }
 }
 /*---------------------------------

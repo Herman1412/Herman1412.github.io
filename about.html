@@ -43,7 +43,9 @@
             informasjon trykk på kontakt oss nederst på siden. 
         </p>
         <div id="btnDiv">
-            <button href="mailto:your@email.com" class="knapper">Kontakt oss</button>
+            <form id="mail" method="post" action="mailto:$postmottak@ntnu.no?subject=$WebtekFC &message= $Hei Webtek FC">
+                <button id="mailButton" class="knapper">Kontakt oss</button>
+            </form>
         </div>
     </main>
     <script src="scripts/script.js"></script>
