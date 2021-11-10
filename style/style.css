@@ -178,10 +178,10 @@ h1{
 h2{
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
    font-size: 28px;
-   color: var(--skrift);
+   color: var(--skrTrebuchet MSift);
 }
 h3{
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
+   font-family: '', 'Lucida Sans Unicode', Arial, sans-serif; 
    font-size: 22px;
    color: var(--skrift); 
 }
