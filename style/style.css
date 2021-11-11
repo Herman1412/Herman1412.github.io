@@ -411,7 +411,7 @@ form{
 form .knapper{
     margin-right: 0px;
 }
-#birthdate{
+#birthdate1, #birthdate2{
     min-width: 172px;
 }
 @media only screen and (max-width: 850px){
@@ -427,6 +427,18 @@ form .knapper{
         margin-right: 13%;
     }
 }
+@media only screen and (max-width: 400px){
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 17px;
+        text-align: right;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+     } 
+}
+
 /*---------------------------------
 ----------Calendar page------------
 ---------------------------------*/
