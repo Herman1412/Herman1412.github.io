@@ -54,6 +54,15 @@ nav a:not(:first-child){
 nav a #logo{
     margin: auto;
 }
+@media only screen and (max-width: 1200px){
+    nav{
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    }
+    nav a{
+        font-size: 2vw;
+    }
+}
+
 /*---------------------------------
 -------------Footer----------------
 ---------------------------------*/
@@ -178,7 +187,7 @@ h1{
 h2{
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif; 
    font-size: 28px;
-   color: var(--skrTrebuchet MSift);
+   color: var(--skrift);
 }
 h3{
    font-family: '', 'Lucida Sans Unicode', Arial, sans-serif; 
@@ -370,13 +379,13 @@ h4{
 #membershipImg{
     display: block;
     float: right;
-    width: 450px;
+    width: 500px;
 }
 #formGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 25px;
-    margin-top: 4.5vw;
+    margin-top: 4vw;
 }
 #formGrid div{
     background-color: var(--navbar);
